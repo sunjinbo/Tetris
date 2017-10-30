@@ -1,0 +1,27 @@
+// ====================================================================
+// File: Tetris_loc.rss
+// Created: 12/20/07
+// Author: Sun Jinbo
+// Copyright (c): TietoEnator, All rights reserved
+// ==================================================================== */
+
+// INCLUDES
+#include <appinfo.rh>
+#include "tetris_loc.rls"
+
+// application information
+RESOURCE LOCALISABLE_APP_INFO
+	{
+	short_caption = STRING_r_short_Caption;
+	caption_and_icon =
+		{
+		CAPTION_AND_ICON_INFO 
+			{
+			caption = STRING_r_Caption;
+			//number_of_icons=3;
+			//icon_file=STRING_r_Tetris_icon_path;
+			}
+		};
+	}
+
+// End of the file.

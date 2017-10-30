@@ -1,0 +1,64 @@
+// ====================================================================
+// File: Tetris_loc.rss
+// Created: 12/20/07
+// Author: Sun Jinbo
+// Copyright (c): TietoEnator, All rights reserved
+// ====================================================================
+
+// ---------------------------------------------------------
+// STRING_short_caption
+// Define the text of short Caption
+// ---------------------------------------------------------
+//
+rls_string STRING_r_short_Caption "Tetris"
+
+// ---------------------------------------------------------
+// STRING_r_Tetris_caption
+// Define the text of full Caption
+// ---------------------------------------------------------
+//
+rls_string STRING_r_Caption "Tetris"
+
+// ---------------------------------------------------------
+// STRING_r_title_NextFigure
+// Define the text of Next Figure
+// ---------------------------------------------------------
+//
+rls_string STRING_r_NextFigure "Next Figure:"
+
+// ---------------------------------------------------------
+// STRING_r_title_Level
+// Define the text of Level
+// ---------------------------------------------------------
+//
+rls_string STRING_r_Level "Level:%d"
+
+// ---------------------------------------------------------
+// STRING_r_title_Line
+// Define the text of Line
+// ---------------------------------------------------------
+//
+rls_string STRING_r_Line "Line:%d"
+
+// ---------------------------------------------------------
+// STRING_r_ti
+// Define the text of Score
+// ---------------------------------------------------------
+//
+rls_string STRING_r_Score "Score:%d"
+
+// ---------------------------------------------------------
+// STRING_r_title_Life
+// Define the text of Life
+// ---------------------------------------------------------
+//
+rls_string STRING_r_Life "Life:%d"
+
+// ---------------------------------------------------------
+// STRING_r_GameOver
+// Define the text of Life
+// ---------------------------------------------------------
+//
+rls_string STRING_r_GameOver "Game Over!"
+
+// End of the file.

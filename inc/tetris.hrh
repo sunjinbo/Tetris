@@ -1,0 +1,21 @@
+/* ====================================================================
+ * File: tetris.hrh
+ * Created: 12/20/07
+ * Author: Sun Jinbo
+ * Copyright (c): TietoEnator, All rights reserved
+ * ==================================================================== */
+
+#ifndef TETRIS_HRH
+#define TETRIS_HRH
+
+/** Tetris enumerate command codes */
+enum TTetrisIds
+    {
+    ETetrisStart = 1,  // start value must not be 0
+    ETetrisRestart,
+    ETetrisStop,
+    ETetrisPause,
+    ETetrisResume
+    };
+
+#endif // TETRIS_HRH

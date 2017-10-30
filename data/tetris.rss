@@ -1,0 +1,197 @@
+// ====================================================================
+// File: Tetris.rss
+// Created: 12/20/07
+// Author: Sun Jinbo
+// Copyright (c): TietoEnator, All rights reserved
+// ==================================================================== */
+
+NAME HELL
+
+// INLCUDES
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+#include "tetris.hrh"
+#include "tetris_loc.rls"
+
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// ---------------------------------------------------------
+//   
+//    Default Document Name
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ---------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    menubar = r_Tetris_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_Tetris_menubar
+//   Menubar for Tetris example
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_Tetris_menubar
+    {
+    titles =
+        {
+        MENU_TITLE {menu_pane = r_Tetris_menu;}
+        };
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_Tetris_menu
+//   Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_Tetris_menu
+    {
+    items = 
+        {
+        MENU_ITEM {command = ETetrisStart;  txt = "Start";},
+        MENU_ITEM {command = EAknSoftkeyExit;   txt = "Exit";}
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Tetris_run_menubar
+//   Menubar for Tetris example
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_Tetris_run_menubar
+    {
+    titles =
+        {
+        MENU_TITLE {menu_pane = r_Tetris_run_menu;}
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Tetris_run_menu
+//   Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_Tetris_run_menu
+    {
+    items = 
+        {
+        MENU_ITEM {command = ETetrisStop;  txt = "Stop";},
+        MENU_ITEM {command = ETetrisPause;  txt = "Pause";},
+        MENU_ITEM {command = ETetrisRestart;  txt = "Restart";},
+        MENU_ITEM {command = EAknSoftkeyExit;   txt = "Exit";}
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Tetris_pause_menubar
+//   Menubar for Tetris example
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_Tetris_pause_menubar
+    {
+    titles =
+        {
+        MENU_TITLE {menu_pane = r_Tetris_pause_menu;}
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Tetris_pause_menu
+//   Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_Tetris_pause_menu
+    {
+    items = 
+        {
+        MENU_ITEM {command = ETetrisStop;  txt = "Stop";},
+        MENU_ITEM {command = ETetrisResume;  txt = "Resume";},
+        MENU_ITEM {command = ETetrisRestart;  txt = "Restart";},
+        MENU_ITEM {command = EAknSoftkeyExit;   txt = "Exit";}
+        };
+    }
+
+// ---------------------------------------------------------
+// r_STR_NextFigure
+// Define the text of Next Figure
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_STR_NextFigure 
+    {
+    buf = STRING_r_NextFigure;
+    }
+
+// ---------------------------------------------------------
+// r_STR_Level
+// Define the text of Level
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_STR_Level 
+    {
+    buf = STRING_r_Level;
+    }
+
+// ---------------------------------------------------------
+// r_STR_Line
+// Define the text of Line
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_STR_Line 
+    {
+    buf = STRING_r_Line;
+    }
+
+// ---------------------------------------------------------
+// r_STR_Score
+// Define the text of Score
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_STR_Score 
+    {
+    buf = STRING_r_Score;
+    }
+    
+// ---------------------------------------------------------
+// r_STR_Life
+// Define the text of Life
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_STR_Life 
+    {
+    buf = STRING_r_Life;
+    }
+
+// End of the file.

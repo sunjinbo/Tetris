@@ -1,0 +1,72 @@
+// ====================================================================
+// * File: Tetris.mmp
+// * Created: 12/20/07
+// * Author: Sun Jinbo
+// * Copyright (c): TietoEnator, All rights reserved
+// * ====================================================================
+
+CAPABILITY                   None
+
+TARGET                        tetris.exe
+TARGETTYPE                 exe
+UID                               0x100039CE 0x0E0F3E4F
+
+SOURCEPATH                ..\src
+SOURCE                        tetris.cpp
+SOURCE                        tetrisapplication.cpp 
+SOURCE                        tetrisappui.cpp
+SOURCE                        tetrismainview.cpp
+SOURCE                        tetrismaincontainer.cpp
+SOURCE                        tetrisdocument.cpp
+SOURCE                        tetrisgameengine.cpp
+SOURCE                        grid.cpp
+SOURCE                        scene.cpp
+SOURCE                        scorekeeper.cpp
+SOURCE                        figurebase.cpp
+SOURCE                        fixedfigure.cpp
+SOURCE                        removablefigure.cpp
+SOURCE                        nextremovablefigure.cpp
+SOURCE                        animationfigure.cpp
+
+//SOURCE                        grid.cpp
+//SOURCE                        scorekeeper.cpp
+
+SOURCEPATH                ..\data
+START RESOURCE         tetris.rss
+HEADER
+TARGETPATH                resource\apps
+END // RESOURCE
+
+//SOURCEPATH                ..\data
+START RESOURCE         tetris_reg.rss
+//HEADER
+TARGETPATH                \private\10003a3f\apps
+END // RESOURCE
+
+//SOURCEPATH                ..\data
+START RESOURCE         tetris_loc.rss
+//HEADER
+TARGETPATH                resource\apps
+END // RESOURCE
+
+USERINCLUDE                ..\inc
+
+SYSTEMINCLUDE            \epoc32\include
+
+// Symbian OS
+LIBRARY                        euser.lib
+LIBRARY                        apparc.lib
+LIBRARY                        cone.lib
+LIBRARY                        eikcore.lib
+LIBRARY                        gdi.lib
+
+LIBRARY                        bitgdi.lib // Double buffer
+LIBRARY                        fbscli.lib
+LIBRARY                        ws32.lib
+LIBRARY                        eikcoctl.lib // CEikMenuBar
+LIBRARY                        eikcore.lib
+// S60
+LIBRARY                        avkon.lib
+LIBRARY                        commonengine.lib
+
+// End of the file.

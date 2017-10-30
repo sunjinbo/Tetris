@@ -1,0 +1,21 @@
+// ====================================================================
+// File: Tetris_reg.rss
+// Created: 12/20/07
+// Author: Sun Jinbo
+// Copyright (c): TietoEnator, All rights reserved
+// ==================================================================== */
+
+//Tetris application's registration resource file 
+
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0x0E0F3E4F
+
+RESOURCE APP_REGISTRATION_INFO 
+	{
+	app_file="tetris";
+	//
+	localisable_resource_file="\\resource\\apps\\tetris_loc";
+	//
+	}
